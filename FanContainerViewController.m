@@ -52,12 +52,11 @@
 {
     [self addChildViewController:self.frontViewController];
     self.frontViewController.view.frame = self.view.bounds;
-    if(self.backViewController)
+    if([self.backViewController isViewLoaded] && self.backViewController.view.superview == self.view) {
         [self.view insertSubview:self.frontViewController.view aboveSubview:self.backViewController.view];
-    else
-    {
-        [self.view addSubview:self.backViewController.view];
-        [self.view sendSubviewToBack:self.backViewController.view];
+    } else {
+        [self.view addSubview:self.frontViewController.view];
+        [self.view sendSubviewToBack:self.frontViewController.view];
     }
     
     [self.frontViewController didMoveToParentViewController:self];

@@ -14,12 +14,6 @@
 
 @implementation RootVC
 
-- (void) viewDidLoad
-{
-    [super viewDidLoad];
-    [self.view bringSubviewToFront:self.infoButton];
-}
-
 - (CGPoint) rotationCenter
 {
     return self.infoButton.center;
