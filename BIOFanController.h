@@ -13,7 +13,7 @@
 @property (nonatomic) IBOutlet UIViewController * frontViewController;
 @property (nonatomic) IBOutlet UIViewController * backViewController;
 
--(CGPoint) rotationCenter; // default value returns the view center
+@property (nonatomic) CGPoint rotationCenter; // defaults to {0,0}
 
 @property (readonly) UIViewController * visibleViewController;
 

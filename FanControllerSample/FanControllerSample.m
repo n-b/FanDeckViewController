@@ -20,34 +20,30 @@
 {
     self = [super init];
     if (self) {
-        self.frontViewController = [[UIViewController alloc] initWithNibName:@"Front1" bundle:nil];
-        self.backViewController = [[UIViewController alloc] initWithNibName:@"Back1" bundle:nil];
+        self.frontViewController = [[UIViewController alloc] initWithNibName:@"Main" bundle:nil];
+        self.backViewController = [[UIViewController alloc] initWithNibName:@"Settings" bundle:nil];
     }
     return self;
 }
 
-- (CGPoint) rotationCenter
-{
-    return _infoButton.center;
+- (IBAction)showSettings:(id)sender {
+    self.rotationCenter = [sender center];
+    self.backViewController = [[UIViewController alloc] initWithNibName:@"Settings" bundle:nil];
+    [self switchVisibleViewController];
 }
 
-- (IBAction)showBack1:(id)sender {
-    self.backViewController = [[UIViewController alloc] initWithNibName:@"Back1" bundle:nil];
+- (IBAction)showSelector:(id)sender{
+    self.rotationCenter = [sender center];
+    self.backViewController = [[UIViewController alloc] initWithNibName:@"Selector" bundle:nil];
+    [self switchVisibleViewController];
 }
 
-- (IBAction)showBack2:(id)sender
-{
-    self.backViewController = [[UIViewController alloc] initWithNibName:@"Back2" bundle:nil];
+- (IBAction)showMainContent:(id)sender{
+    self.frontViewController = [[UIViewController alloc] initWithNibName:@"Main" bundle:nil];
 }
 
-- (IBAction)showFront1:(id)sender
-{
-    self.frontViewController = [[UIViewController alloc] initWithNibName:@"Front1" bundle:nil];
-}
-
-- (IBAction)showFront2:(id)sender
-{
-    self.frontViewController = [[UIViewController alloc] initWithNibName:@"Front2" bundle:nil];
+- (IBAction)showAltContent:(id)sender{
+    self.frontViewController = [[UIViewController alloc] initWithNibName:@"Alt" bundle:nil];
 }
 
 @end

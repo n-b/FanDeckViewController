@@ -26,14 +26,18 @@
 
 - (void) setFrontViewController:(UIViewController *)frontViewController_
 {
+    BOOL shouldReopen = self.frontViewController && self.visibleViewController==self.backViewController;
     [self.frontViewController willMoveToParentViewController:nil];
     [self.frontViewController.view removeFromSuperview];
     [self.frontViewController removeFromParentViewController];
 
     _frontViewController = frontViewController_;
     
-    if([self isViewLoaded])
+    if([self isViewLoaded]) {
         [self setupFront];
+        if(shouldReopen)
+            [self showBackViewControllerAnimated:NO completion:nil];
+    }
 }
 
 - (void) setBackViewController:(UIViewController *)backViewController_
@@ -64,6 +68,7 @@
     // Add Shadow
     self.frontViewController.view.layer.shadowOffset = CGSizeZero;
     self.frontViewController.view.layer.shadowOpacity = 1;
+    [self setupRotationCenter];
     [self setupFrontLayerShadowPath];
     self.visibleViewController = self.frontViewController;
 }
@@ -93,9 +98,11 @@
     self.frontViewController.view.layer.position = self.rotationCenter;
 }
 
-- (CGPoint) rotationCenter // Reimplemented
+- (void)setRotationCenter:(CGPoint)rotationCenter_
 {
-    return CGPointMake(CGRectGetMidX(self.view.bounds), CGRectGetMidY(self.view.bounds));
+    _rotationCenter = rotationCenter_;
+    if([self isViewLoaded])
+        [self setupRotationCenter];
 }
 
 - (void) viewDidLoad
@@ -105,10 +112,9 @@
     [self setupBack];
 }
 
-- (void) viewDidAppear:(BOOL)animated
+- (void) viewDidLayoutSubviews
 {
-    [super viewDidAppear:animated];
-    // Do this late : if launched in landscape on iPad, willAnimateRotationToInterfaceOrientation: is not called and the setup is done for portrait in viewDidLoad. 
+    [super viewDidLayoutSubviews];
     [self setupRotationCenter];
     [self setupFrontLayerShadowPath];
 }
@@ -215,9 +221,12 @@
     CATransform3D presentationTransform = [presentationValue CATransform3DValue];
     CGFloat currentAngle = atan2f(presentationTransform.m12, presentationTransform.m11);
     
-    animation.fromValue = presentationValue;
     // we rotate on the current transform, which is probably not identity.
     animation.toValue = [NSValue valueWithCATransform3D:CATransform3DRotate([modelValue CATransform3DValue], toAngle, 0, 0, 1)];
+    if(animated)
+        animation.fromValue = presentationValue;
+    else
+        animation.fromValue = animation.toValue;
     
     // ... for a fraction of the duration, depending on the actual angle we must animate
     if(animated)
