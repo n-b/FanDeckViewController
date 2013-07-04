@@ -6,6 +6,8 @@
 //  Copyright (c) 2013 Nicolas Bouilleaud. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
+
 @interface BIOFanController : UIViewController
 
 @property (nonatomic) IBOutlet UIViewController * frontViewController;
