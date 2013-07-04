@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		37164B7317860C87002FFC70 /* Selector.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37164B7217860C87002FFC70 /* Selector.xib */; };
 		37164B7517860D9B002FFC70 /* Settings.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37164B7417860D9A002FFC70 /* Settings.xib */; };
-		37164B7717860E69002FFC70 /* Alt.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37164B7617860E69002FFC70 /* Alt.xib */; };
 		378C45091785550B008C253D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 378C45081785550B008C253D /* UIKit.framework */; };
 		378C450B1785550B008C253D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 378C450A1785550B008C253D /* Foundation.framework */; };
 		378C450D1785550B008C253D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 378C450C1785550B008C253D /* CoreGraphics.framework */; };
@@ -24,9 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		37164B7217860C87002FFC70 /* Selector.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Selector.xib; sourceTree = "<group>"; };
 		37164B7417860D9A002FFC70 /* Settings.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Settings.xib; sourceTree = "<group>"; };
-		37164B7617860E69002FFC70 /* Alt.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Alt.xib; sourceTree = "<group>"; };
 		378C45051785550B008C253D /* FanControllerSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FanControllerSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		378C45081785550B008C253D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		378C450A1785550B008C253D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -94,8 +90,6 @@
 				378C45181785550B008C253D /* FanControllerSample.m */,
 				37FAD0071785572B00AE462C /* RootVC.xib */,
 				378C452C178555A4008C253D /* Main.xib */,
-				37164B7617860E69002FFC70 /* Alt.xib */,
-				37164B7217860C87002FFC70 /* Selector.xib */,
 				37164B7417860D9A002FFC70 /* Settings.xib */,
 				378C450F1785550B008C253D /* Supporting Files */,
 			);
@@ -170,9 +164,7 @@
 				378C451F1785550B008C253D /* Default-568h@2x.png in Resources */,
 				378C452E178555A4008C253D /* Main.xib in Resources */,
 				37FAD0091785572B00AE462C /* RootVC.xib in Resources */,
-				37164B7317860C87002FFC70 /* Selector.xib in Resources */,
 				37164B7517860D9B002FFC70 /* Settings.xib in Resources */,
-				37164B7717860E69002FFC70 /* Alt.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

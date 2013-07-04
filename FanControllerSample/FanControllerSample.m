@@ -26,24 +26,9 @@
     return self;
 }
 
-- (IBAction)showSettings:(id)sender {
-    self.rotationCenter = [sender center];
-    self.backViewController = [[UIViewController alloc] initWithNibName:@"Settings" bundle:nil];
-    [self switchVisibleViewController];
-}
-
-- (IBAction)showSelector:(id)sender{
-    self.rotationCenter = [sender center];
-    self.backViewController = [[UIViewController alloc] initWithNibName:@"Selector" bundle:nil];
-    [self switchVisibleViewController];
-}
-
-- (IBAction)showMainContent:(id)sender{
-    self.frontViewController = [[UIViewController alloc] initWithNibName:@"Main" bundle:nil];
-}
-
-- (IBAction)showAltContent:(id)sender{
-    self.frontViewController = [[UIViewController alloc] initWithNibName:@"Alt" bundle:nil];
+- (CGPoint) rotationCenter
+{
+    return _infoButton.center;
 }
 
 @end

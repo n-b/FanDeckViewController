@@ -98,11 +98,9 @@
     self.frontViewController.view.layer.position = self.rotationCenter;
 }
 
-- (void)setRotationCenter:(CGPoint)rotationCenter_
+- (CGPoint) rotationCenter // Reimplemented
 {
-    _rotationCenter = rotationCenter_;
-    if([self isViewLoaded])
-        [self setupRotationCenter];
+    return CGPointMake(CGRectGetMidX(self.view.bounds), CGRectGetMidY(self.view.bounds));
 }
 
 - (void) viewDidLoad
