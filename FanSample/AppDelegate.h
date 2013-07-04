@@ -1,5 +1,5 @@
 //
-//  BOUAppDelegate.h
+//  AppDelegate.h
 //  FanSample
 //
 //  Created by Nicolas on 04/07/13.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BOUAppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

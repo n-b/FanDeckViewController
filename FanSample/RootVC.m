@@ -8,15 +8,14 @@
 
 #import "RootVC.h"
 
-@interface RootVC ()
-
-@end
-
 @implementation RootVC
+{
+    IBOutlet UIButton *infoButton;
+}
 
 - (CGPoint) rotationCenter
 {
-    return self.infoButton.center;
+    return infoButton.center;
 }
 
 @end

@@ -1,25 +1,25 @@
 //
-//  FanContainerViewController.m
-//  Bicyclette
+//  BIOFanController.m
+//  BIOFanController
 //
-//  Created by Nicolas Bouilleaud on 03/11/12.
-//  Copyright (c) 2012 Nicolas Bouilleaud. All rights reserved.
+//  Created by Nicolas Bouilleaud on 04/07/13.
+//  Copyright (c) 2013 Nicolas Bouilleaud. All rights reserved.
 //
 
-#import "FanContainerViewController.h"
+#import "BIOFanController.h"
 #import <QuartzCore/QuartzCore.h>
 
 #define kFanOpenAngle .9*M_PI
 #define kFanAnimationDuration .4f
 
-@interface FanContainerViewController ()
+@interface BIOFanController ()
 @property UIViewController * visibleViewController;
 @end
 
 /****************************************************************************/
 #pragma mark -
 
-@implementation FanContainerViewController
+@implementation BIOFanController
 
 /****************************************************************************/
 #pragma mark Child View Controllers
@@ -247,7 +247,7 @@
 
 - (BOOL) isVisibleViewController
 {
-    return [(FanContainerViewController*)self.parentViewController visibleViewController] == self;
+    return [(BIOFanController*)self.parentViewController visibleViewController] == self;
 }
 
 @end

@@ -6,8 +6,7 @@
 //  Copyright (c) 2013 Nicolas Bouilleaud. All rights reserved.
 //
 
-#import "FanContainerViewController.h"
+#import "BIOFanController.h"
 
-@interface RootVC : FanContainerViewController
-@property (strong, nonatomic) IBOutlet UIButton *infoButton;
+@interface RootVC : BIOFanController
 @end

@@ -12,11 +12,11 @@
 		378C450D1785550B008C253D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 378C450C1785550B008C253D /* CoreGraphics.framework */; };
 		378C45131785550B008C253D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 378C45111785550B008C253D /* InfoPlist.strings */; };
 		378C45151785550B008C253D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 378C45141785550B008C253D /* main.m */; };
-		378C45191785550B008C253D /* BOUAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 378C45181785550B008C253D /* BOUAppDelegate.m */; };
+		378C45191785550B008C253D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 378C45181785550B008C253D /* AppDelegate.m */; };
 		378C451B1785550B008C253D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 378C451A1785550B008C253D /* Default.png */; };
 		378C451D1785550B008C253D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 378C451C1785550B008C253D /* Default@2x.png */; };
 		378C451F1785550B008C253D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 378C451E1785550B008C253D /* Default-568h@2x.png */; };
-		378C45271785552B008C253D /* FanContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 378C45261785552B008C253D /* FanContainerViewController.m */; };
+		378C45271785552B008C253D /* BIOFanController.m in Sources */ = {isa = PBXBuildFile; fileRef = 378C45261785552B008C253D /* BIOFanController.m */; };
 		378C452917855568008C253D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 378C452817855568008C253D /* QuartzCore.framework */; };
 		378C452E178555A4008C253D /* ContentVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 378C452C178555A4008C253D /* ContentVC.xib */; };
 		378C4533178555DE008C253D /* SettingsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 378C4531178555DE008C253D /* SettingsVC.xib */; };
@@ -33,13 +33,13 @@
 		378C45121785550B008C253D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		378C45141785550B008C253D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		378C45161785550B008C253D /* FanSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FanSample-Prefix.pch"; sourceTree = "<group>"; };
-		378C45171785550B008C253D /* BOUAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BOUAppDelegate.h; sourceTree = "<group>"; };
-		378C45181785550B008C253D /* BOUAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BOUAppDelegate.m; sourceTree = "<group>"; };
+		378C45171785550B008C253D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		378C45181785550B008C253D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		378C451A1785550B008C253D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		378C451C1785550B008C253D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		378C451E1785550B008C253D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		378C45251785552B008C253D /* FanContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FanContainerViewController.h; sourceTree = "<group>"; };
-		378C45261785552B008C253D /* FanContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FanContainerViewController.m; sourceTree = "<group>"; };
+		378C45251785552B008C253D /* BIOFanController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIOFanController.h; sourceTree = "<group>"; };
+		378C45261785552B008C253D /* BIOFanController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIOFanController.m; sourceTree = "<group>"; };
 		378C452817855568008C253D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		378C452C178555A4008C253D /* ContentVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContentVC.xib; sourceTree = "<group>"; };
 		378C4531178555DE008C253D /* SettingsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsVC.xib; sourceTree = "<group>"; };
@@ -66,8 +66,8 @@
 		378C44FC1785550B008C253D = {
 			isa = PBXGroup;
 			children = (
-				378C45251785552B008C253D /* FanContainerViewController.h */,
-				378C45261785552B008C253D /* FanContainerViewController.m */,
+				378C45251785552B008C253D /* BIOFanController.h */,
+				378C45261785552B008C253D /* BIOFanController.m */,
 				378C450E1785550B008C253D /* FanSample */,
 				378C45071785550B008C253D /* Frameworks */,
 				378C45061785550B008C253D /* Products */,
@@ -96,8 +96,8 @@
 		378C450E1785550B008C253D /* FanSample */ = {
 			isa = PBXGroup;
 			children = (
-				378C45171785550B008C253D /* BOUAppDelegate.h */,
-				378C45181785550B008C253D /* BOUAppDelegate.m */,
+				378C45171785550B008C253D /* AppDelegate.h */,
+				378C45181785550B008C253D /* AppDelegate.m */,
 				37FAD0051785572B00AE462C /* RootVC.h */,
 				37FAD0061785572B00AE462C /* RootVC.m */,
 				37FAD0071785572B00AE462C /* RootVC.xib */,
@@ -192,8 +192,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				378C45151785550B008C253D /* main.m in Sources */,
-				378C45191785550B008C253D /* BOUAppDelegate.m in Sources */,
-				378C45271785552B008C253D /* FanContainerViewController.m in Sources */,
+				378C45191785550B008C253D /* AppDelegate.m in Sources */,
+				378C45271785552B008C253D /* BIOFanController.m in Sources */,
 				37FAD0081785572B00AE462C /* RootVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,12 +1,12 @@
 //
-//  FanContainerViewController.h
-//  Bicyclette
+//  BIOFanController.h
+//  BIOFanController
 //
-//  Created by Nicolas Bouilleaud on 03/11/12.
-//  Copyright (c) 2012 Nicolas Bouilleaud. All rights reserved.
+//  Created by Nicolas Bouilleaud on 04/07/13.
+//  Copyright (c) 2013 Nicolas Bouilleaud. All rights reserved.
 //
 
-@interface FanContainerViewController : UIViewController
+@interface BIOFanController : UIViewController
 
 @property (nonatomic) IBOutlet UIViewController * frontViewController;
 @property (nonatomic) IBOutlet UIViewController * backViewController;
