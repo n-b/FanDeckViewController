@@ -19,9 +19,4 @@
     return self.infoButton.center;
 }
 
-- (IBAction)rotate:(id)sender
-{
-    [self switchVisibleViewController];
-}
-
 @end
