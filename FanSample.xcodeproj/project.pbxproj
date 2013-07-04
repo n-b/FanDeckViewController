@@ -16,6 +16,12 @@
 		378C451B1785550B008C253D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 378C451A1785550B008C253D /* Default.png */; };
 		378C451D1785550B008C253D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 378C451C1785550B008C253D /* Default@2x.png */; };
 		378C451F1785550B008C253D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 378C451E1785550B008C253D /* Default-568h@2x.png */; };
+		378C45271785552B008C253D /* FanContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 378C45261785552B008C253D /* FanContainerViewController.m */; };
+		378C452917855568008C253D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 378C452817855568008C253D /* QuartzCore.framework */; };
+		378C452E178555A4008C253D /* ContentVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 378C452C178555A4008C253D /* ContentVC.xib */; };
+		378C4533178555DE008C253D /* SettingsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 378C4531178555DE008C253D /* SettingsVC.xib */; };
+		37FAD0081785572B00AE462C /* RootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 37FAD0061785572B00AE462C /* RootVC.m */; };
+		37FAD0091785572B00AE462C /* RootVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37FAD0071785572B00AE462C /* RootVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +38,14 @@
 		378C451A1785550B008C253D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		378C451C1785550B008C253D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		378C451E1785550B008C253D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		378C45251785552B008C253D /* FanContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FanContainerViewController.h; sourceTree = "<group>"; };
+		378C45261785552B008C253D /* FanContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FanContainerViewController.m; sourceTree = "<group>"; };
+		378C452817855568008C253D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		378C452C178555A4008C253D /* ContentVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContentVC.xib; sourceTree = "<group>"; };
+		378C4531178555DE008C253D /* SettingsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsVC.xib; sourceTree = "<group>"; };
+		37FAD0051785572B00AE462C /* RootVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootVC.h; sourceTree = "<group>"; };
+		37FAD0061785572B00AE462C /* RootVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootVC.m; sourceTree = "<group>"; };
+		37FAD0071785572B00AE462C /* RootVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				378C452917855568008C253D /* QuartzCore.framework in Frameworks */,
 				378C45091785550B008C253D /* UIKit.framework in Frameworks */,
 				378C450B1785550B008C253D /* Foundation.framework in Frameworks */,
 				378C450D1785550B008C253D /* CoreGraphics.framework in Frameworks */,
@@ -51,6 +66,8 @@
 		378C44FC1785550B008C253D = {
 			isa = PBXGroup;
 			children = (
+				378C45251785552B008C253D /* FanContainerViewController.h */,
+				378C45261785552B008C253D /* FanContainerViewController.m */,
 				378C450E1785550B008C253D /* FanSample */,
 				378C45071785550B008C253D /* Frameworks */,
 				378C45061785550B008C253D /* Products */,
@@ -71,6 +88,7 @@
 				378C45081785550B008C253D /* UIKit.framework */,
 				378C450A1785550B008C253D /* Foundation.framework */,
 				378C450C1785550B008C253D /* CoreGraphics.framework */,
+				378C452817855568008C253D /* QuartzCore.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -80,6 +98,11 @@
 			children = (
 				378C45171785550B008C253D /* BOUAppDelegate.h */,
 				378C45181785550B008C253D /* BOUAppDelegate.m */,
+				37FAD0051785572B00AE462C /* RootVC.h */,
+				37FAD0061785572B00AE462C /* RootVC.m */,
+				37FAD0071785572B00AE462C /* RootVC.xib */,
+				378C452C178555A4008C253D /* ContentVC.xib */,
+				378C4531178555DE008C253D /* SettingsVC.xib */,
 				378C450F1785550B008C253D /* Supporting Files */,
 			);
 			path = FanSample;
@@ -155,6 +178,9 @@
 				378C451B1785550B008C253D /* Default.png in Resources */,
 				378C451D1785550B008C253D /* Default@2x.png in Resources */,
 				378C451F1785550B008C253D /* Default-568h@2x.png in Resources */,
+				378C452E178555A4008C253D /* ContentVC.xib in Resources */,
+				378C4533178555DE008C253D /* SettingsVC.xib in Resources */,
+				37FAD0091785572B00AE462C /* RootVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +193,8 @@
 			files = (
 				378C45151785550B008C253D /* main.m in Sources */,
 				378C45191785550B008C253D /* BOUAppDelegate.m in Sources */,
+				378C45271785552B008C253D /* FanContainerViewController.m in Sources */,
+				37FAD0081785572B00AE462C /* RootVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +309,7 @@
 				378C45241785550B008C253D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
