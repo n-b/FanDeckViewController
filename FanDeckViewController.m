@@ -252,7 +252,7 @@
 
 @implementation UIViewController (FanContainedViewController)
 
-- (BOOL) isVisibleViewController
+- (BOOL) fanDeck_isVisibleViewController
 {
     return [(FanDeckViewController*)self.parentViewController visibleViewController] == self;
 }

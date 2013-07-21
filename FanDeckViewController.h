@@ -28,5 +28,5 @@
 
 
 @interface UIViewController (FanContainedViewController)
-- (BOOL) isVisibleViewController;// returns YES if the receiver is the current visibleVC
+- (BOOL) fanDeck_isVisibleViewController;// returns YES if the receiver is the current visibleVC
 @end
