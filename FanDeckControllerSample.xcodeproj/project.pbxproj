@@ -11,11 +11,11 @@
 		378C45091785550B008C253D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 378C45081785550B008C253D /* UIKit.framework */; };
 		378C450B1785550B008C253D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 378C450A1785550B008C253D /* Foundation.framework */; };
 		378C450D1785550B008C253D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 378C450C1785550B008C253D /* CoreGraphics.framework */; };
-		378C45191785550B008C253D /* FanControllerSample.m in Sources */ = {isa = PBXBuildFile; fileRef = 378C45181785550B008C253D /* FanControllerSample.m */; };
+		378C45191785550B008C253D /* FanDeckControllerSample.m in Sources */ = {isa = PBXBuildFile; fileRef = 378C45181785550B008C253D /* FanDeckControllerSample.m */; };
 		378C451B1785550B008C253D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 378C451A1785550B008C253D /* Default.png */; };
 		378C451D1785550B008C253D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 378C451C1785550B008C253D /* Default@2x.png */; };
 		378C451F1785550B008C253D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 378C451E1785550B008C253D /* Default-568h@2x.png */; };
-		378C45271785552B008C253D /* BIOFanController.m in Sources */ = {isa = PBXBuildFile; fileRef = 378C45261785552B008C253D /* BIOFanController.m */; };
+		378C45271785552B008C253D /* FanDeckViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 378C45261785552B008C253D /* FanDeckViewController.m */; };
 		378C452917855568008C253D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 378C452817855568008C253D /* QuartzCore.framework */; };
 		378C452E178555A4008C253D /* Main.xib in Resources */ = {isa = PBXBuildFile; fileRef = 378C452C178555A4008C253D /* Main.xib */; };
 		37FAD0091785572B00AE462C /* RootVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37FAD0071785572B00AE462C /* RootVC.xib */; };
@@ -23,17 +23,17 @@
 
 /* Begin PBXFileReference section */
 		37164B7417860D9A002FFC70 /* Settings.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Settings.xib; sourceTree = "<group>"; };
-		378C45051785550B008C253D /* FanControllerSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FanControllerSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		378C45051785550B008C253D /* FanDeckControllerSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FanDeckControllerSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		378C45081785550B008C253D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		378C450A1785550B008C253D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		378C450C1785550B008C253D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		378C45101785550B008C253D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		378C45181785550B008C253D /* FanControllerSample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FanControllerSample.m; sourceTree = "<group>"; };
+		378C45181785550B008C253D /* FanDeckControllerSample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FanDeckControllerSample.m; sourceTree = "<group>"; };
 		378C451A1785550B008C253D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		378C451C1785550B008C253D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		378C451E1785550B008C253D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		378C45251785552B008C253D /* BIOFanController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIOFanController.h; sourceTree = "<group>"; };
-		378C45261785552B008C253D /* BIOFanController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIOFanController.m; sourceTree = "<group>"; };
+		378C45251785552B008C253D /* FanDeckViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FanDeckViewController.h; sourceTree = "<group>"; };
+		378C45261785552B008C253D /* FanDeckViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FanDeckViewController.m; sourceTree = "<group>"; };
 		378C452817855568008C253D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		378C452C178555A4008C253D /* Main.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Main.xib; sourceTree = "<group>"; };
 		37FAD0071785572B00AE462C /* RootVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootVC.xib; sourceTree = "<group>"; };
@@ -57,9 +57,9 @@
 		378C44FC1785550B008C253D = {
 			isa = PBXGroup;
 			children = (
-				378C45251785552B008C253D /* BIOFanController.h */,
-				378C45261785552B008C253D /* BIOFanController.m */,
-				378C450E1785550B008C253D /* FanControllerSample */,
+				378C45251785552B008C253D /* FanDeckViewController.h */,
+				378C45261785552B008C253D /* FanDeckViewController.m */,
+				378C450E1785550B008C253D /* FanDeckControllerSample */,
 				378C45071785550B008C253D /* Frameworks */,
 				378C45061785550B008C253D /* Products */,
 			);
@@ -68,7 +68,7 @@
 		378C45061785550B008C253D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				378C45051785550B008C253D /* FanControllerSample.app */,
+				378C45051785550B008C253D /* FanDeckControllerSample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,15 +84,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		378C450E1785550B008C253D /* FanControllerSample */ = {
+		378C450E1785550B008C253D /* FanDeckControllerSample */ = {
 			isa = PBXGroup;
 			children = (
-				378C45181785550B008C253D /* FanControllerSample.m */,
+				378C45181785550B008C253D /* FanDeckControllerSample.m */,
 				37FAD0071785572B00AE462C /* RootVC.xib */,
 				378C452C178555A4008C253D /* Main.xib */,
 				37164B7417860D9A002FFC70 /* Settings.xib */,
 				378C450F1785550B008C253D /* Supporting Files */,
 			);
+			name = FanDeckControllerSample;
 			path = FanControllerSample;
 			sourceTree = "<group>";
 		};
@@ -110,9 +111,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		378C45041785550B008C253D /* FanControllerSample */ = {
+		378C45041785550B008C253D /* FanDeckControllerSample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 378C45221785550B008C253D /* Build configuration list for PBXNativeTarget "FanControllerSample" */;
+			buildConfigurationList = 378C45221785550B008C253D /* Build configuration list for PBXNativeTarget "FanDeckControllerSample" */;
 			buildPhases = (
 				378C45011785550B008C253D /* Sources */,
 				378C45021785550B008C253D /* Frameworks */,
@@ -122,9 +123,9 @@
 			);
 			dependencies = (
 			);
-			name = FanControllerSample;
+			name = FanDeckControllerSample;
 			productName = FanSample;
-			productReference = 378C45051785550B008C253D /* FanControllerSample.app */;
+			productReference = 378C45051785550B008C253D /* FanDeckControllerSample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -137,7 +138,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Nicolas Bouilleaud";
 			};
-			buildConfigurationList = 378C45001785550B008C253D /* Build configuration list for PBXProject "FanControllerSample" */;
+			buildConfigurationList = 378C45001785550B008C253D /* Build configuration list for PBXProject "FanDeckControllerSample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -149,7 +150,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				378C45041785550B008C253D /* FanControllerSample */,
+				378C45041785550B008C253D /* FanDeckControllerSample */,
 			);
 		};
 /* End PBXProject section */
@@ -175,8 +176,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				378C45191785550B008C253D /* FanControllerSample.m in Sources */,
-				378C45271785552B008C253D /* BIOFanController.m in Sources */,
+				378C45191785550B008C253D /* FanDeckControllerSample.m in Sources */,
+				378C45271785552B008C253D /* FanDeckViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,7 +244,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = FanControllerSample/Info.plist;
-				PRODUCT_NAME = FanControllerSample;
+				PRODUCT_NAME = FanDeckControllerSample;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -252,7 +253,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = FanControllerSample/Info.plist;
-				PRODUCT_NAME = FanControllerSample;
+				PRODUCT_NAME = FanDeckControllerSample;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -260,7 +261,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		378C45001785550B008C253D /* Build configuration list for PBXProject "FanControllerSample" */ = {
+		378C45001785550B008C253D /* Build configuration list for PBXProject "FanDeckControllerSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				378C45201785550B008C253D /* Debug */,
@@ -269,7 +270,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		378C45221785550B008C253D /* Build configuration list for PBXNativeTarget "FanControllerSample" */ = {
+		378C45221785550B008C253D /* Build configuration list for PBXNativeTarget "FanDeckControllerSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				378C45231785550B008C253D /* Debug */,

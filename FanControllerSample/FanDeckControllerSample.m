@@ -6,11 +6,11 @@
 //  Copyright (c) 2013 Nicolas Bouilleaud. All rights reserved.
 //
 
-#import "BIOFanController.h"
+#import "FanDeckViewController.h"
 
 //
-// The Root VC, subclass of BIOFanController
-@interface RootVC : BIOFanController @end
+// The Root VC, subclass of FanDeckViewController
+@interface RootVC : FanDeckViewController @end
 @implementation RootVC
 {
     IBOutlet UIButton *_infoButton;
@@ -29,6 +29,11 @@
 - (CGPoint) rotationCenter
 {
     return _infoButton.center;
+}
+
+- (BOOL) prefersStatusBarHidden
+{
+    return YES;
 }
 
 @end

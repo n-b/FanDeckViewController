@@ -1,25 +1,25 @@
 //
-//  BIOFanController.m
-//  BIOFanController
+//  FanDeckViewController.m
+//  FanDeckViewController
 //
 //  Created by Nicolas Bouilleaud on 04/07/13.
 //  Copyright (c) 2013 Nicolas Bouilleaud. All rights reserved.
 //
 
-#import "BIOFanController.h"
+#import "FanDeckViewController.h"
 #import <QuartzCore/QuartzCore.h>
 
 #define kFanOpenAngle .9*M_PI
 #define kFanAnimationDuration .4f
 
-@interface BIOFanController ()
+@interface FanDeckViewController ()
 @property UIViewController * visibleViewController;
 @end
 
 /****************************************************************************/
 #pragma mark -
 
-@implementation BIOFanController
+@implementation FanDeckViewController
 
 /****************************************************************************/
 #pragma mark Child View Controllers
@@ -254,7 +254,7 @@
 
 - (BOOL) isVisibleViewController
 {
-    return [(BIOFanController*)self.parentViewController visibleViewController] == self;
+    return [(FanDeckViewController*)self.parentViewController visibleViewController] == self;
 }
 
 @end

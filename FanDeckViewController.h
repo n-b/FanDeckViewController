@@ -1,6 +1,6 @@
 //
-//  BIOFanController.h
-//  BIOFanController
+//  FanDeckViewController.h
+//  FanDeckViewController
 //
 //  Created by Nicolas Bouilleaud on 04/07/13.
 //  Copyright (c) 2013 Nicolas Bouilleaud. All rights reserved.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BIOFanController : UIViewController
+@interface FanDeckViewController : UIViewController
 
 @property (nonatomic) IBOutlet UIViewController * frontViewController;
 @property (nonatomic) IBOutlet UIViewController * backViewController;
